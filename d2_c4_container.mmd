@@ -1,0 +1,41 @@
+C4Container
+    title C4 Level 2: Диаграмма контейнеров — Модуль обработки сделок РЕПО (MVP v1.0)
+
+    Person(ops, "Оператор", "Просмотр позиций,\nадминистрирование,\nзапуск batch вручную")
+
+    System_Ext(ts, "Торговая система", "Источник сделок РЕПО\n(JSON Lines, SFTP/S3)")
+    System_Ext(rs, "Расчётная система", "SOD-остатки,\nподтверждения Leg 2")
+    System_Ext(mon, "Мониторинг", "stdout/файл (демо)\nPrometheus/PagerDuty (прод)")
+
+    System_Boundary(repo_sys, "Модуль обработки сделок РЕПО (Python 3.14 / FastAPI)") {
+
+        Container(api, "REST API", "FastAPI + Uvicorn\nHTTP/JSON", "GET /trades, /positions,\n/obligations, /reports\nDELETE /trades/{id} (отмена NEW)\nPOST /batch/load (ручной запуск)\nhttp://0.0.0.0:8000/api/v1/repo")
+
+        Container(batch, "BatchProcessor", "Python asyncio\nrepo_module/batch/processor.py", "Ночная загрузка JSON Lines.\nЧанки по 1000 записей.\nSAVEPOINT на запись (бизнес-ошибки).\nROLLBACK чанка (системные ошибки).\nПовтор до 3 раз.")
+
+        Container(trade_svc, "TradeService", "Python\nrepo_module/services/trade_service.py", "Маппинг ролей party_1/party_2.\nFallback DEFAULT_SELLER + WARNING.\nВалидация против справочников.\nРасчёт leg2_amount (HALF_UP).\nВставка в trades.")
+
+        Container(pos_svc, "PositionService", "Python\nrepo_module/services/position_service.py", "Pre-check balance >= 0 (1-й рубеж).\nПрименение дельт Leg 1 / Leg 2.\nSOD → EOD копирование.\nFuture Obligations.\nAudit log (SHA-256 hash-chain).")
+
+        Container(calc_util, "Calc Utils", "Python\nrepo_module/utils/calc.py", "Формула Leg 2:\nROUND(sum*rate*Days/365, 2, HALF_UP)\nПоддержка ACT/365, ACT/360.")
+
+        ContainerDb(db_demo, "SQLite (демо)", "aiosqlite\nrepo_module.db", "Все таблицы в одном файле.\nCHECK balance>=0 через триггеры.\nSAVEPOINT поддерживается нативно.\nПереключается через MODE=demo.")
+
+        ContainerDb(db_prod, "PostgreSQL 15+ (прод)", "asyncpg / SQLAlchemy\nrepo_module.db", "Партиционирование raw_trades.\nCHECK (balance >= 0) нативно.\ngen_random_uuid(), JSONB.\nПереключается через MODE=production.")
+    }
+
+    Rel(ts, batch, "JSON Lines файл (1/сутки)", "SFTP(TLS)/S3\n[демо: demo_data/incoming/]")
+    Rel(rs, pos_svc, "SOD-остатки", "REST API / File")
+    Rel(ops, api, "REST запросы", "HTTPS / HTTP")
+    Rel(api, db_demo, "SELECT / DELETE", "SQL (aiosqlite)")
+    Rel(api, db_prod, "SELECT / DELETE", "SQL (asyncpg)")
+    Rel(batch, trade_svc, "Обработка записи")
+    Rel(batch, pos_svc, "Применение проводок")
+    Rel(trade_svc, calc_util, "Расчёт leg2_amount")
+    Rel(trade_svc, db_demo, "INSERT raw_trades, trades", "SQL")
+    Rel(trade_svc, db_prod, "INSERT raw_trades, trades", "SQL")
+    Rel(pos_svc, db_demo, "UPDATE positions\nINSERT obligations, audit_log", "SQL")
+    Rel(pos_svc, db_prod, "UPDATE positions\nINSERT obligations, audit_log", "SQL")
+    Rel(batch, db_demo, "INSERT load_reports\nINSERT rejected_trades", "SQL")
+    Rel(batch, db_prod, "INSERT load_reports\nINSERT rejected_trades", "SQL")
+    Rel(batch, mon, "Алерты failed_chunks,\nload_report", "stdout/файл\n[прод: Kafka/Prometheus]")

@@ -1,0 +1,51 @@
+C4Component
+    title C4 Level 3: Диаграмма компонентов — Модуль обработки сделок РЕПО (MVP v1.0)
+
+    System_Ext(sftp, "SFTP / S3\n[демо: demo_data/incoming/]", "Источник файла сделок")
+    System_Ext(rs, "Расчётная система", "SOD-остатки,\nподтверждения Leg 2")
+    System_Ext(mon, "Мониторинг\n[демо: stdout/файл]", "Алерты и метрики")
+
+    ContainerDb(db, "БД (SQLite / PostgreSQL)", "aiosqlite / asyncpg\nSQLAlchemy ORM")
+
+    Container_Boundary(repo_app, "Модуль РЕПО (Python 3.14 / FastAPI / asyncio)") {
+
+        Component(scheduler, "run_demo.py / POST /batch/load", "Python asyncio\nscripts/run_demo.py\napi/routes.py", "Запускает демо-сценарий\nили ручной batch по API.\nПоследовательность: SOD → batch → EOD.")
+
+        Component(batch_proc, "BatchProcessor", "Python asyncio\nbatch/processor.py", "Читает JSON Lines файл.\nДелит на чанки (chunk_size=1000).\nSAVEPOINT на запись (бизнес-ошибки).\nROLLBACK чанка (системные ошибки).\nПовтор до max_retries=3.\nСчётчики: committed/rejected/duplicates/failed_chunks.")
+
+        Component(trade_svc, "TradeService", "Python\nservices/trade_service.py", "map_roles(): маппинг party_1/party_2\n→ participant/counterparty.\nFallback DEFAULT_SELLER + WARNING.\nvalidate_trade(): проверка справочников.\nbuild_trade_create(): T+0, leg2_amount.\ninsert_trade(): INSERT trades.\ncancel_trade(): NEW → CANCELLED.")
+
+        Component(pos_svc, "PositionService", "Python\nservices/position_service.py", "get_or_create_position(): FOR UPDATE.\napply_position_delta(): pre-check + UPDATE.\napply_leg1_settlements(): 4 проводки.\ncreate_future_obligations(): 4 записи.\nload_sod_balances(): загрузка SOD.\ncopy_sod_to_eod(): SOD → EOD копия.")
+
+        Component(calc_util, "calc.py", "Python\nutils/calc.py", "calculate_leg2_amount():\nRepo_Income = ROUND(sum*rate*days/denom, 2, HALF_UP)\nleg2_amount = ROUND(sum + income, 2, HALF_UP)\nПоддержка ACT/365, ACT/360, 30/360.")
+
+        Component(hash_util, "hashing.py", "Python\nutils/hashing.py", "compute_chain_hash():\nSHA-256(prev_hash + SHA-256(record))\nAppend-only hash-chain\nдля position_audit_log.")
+
+        Component(orm, "ORM Models", "SQLAlchemy 2.0\ndb/orm.py", "PortableUUID: TEXT(SQLite)/UUID(PG).\nPortableJSON: JSON(SQLite)/JSONB(PG).\nTriggers: BEFORE INSERT/UPDATE\nна positions.balance >= 0 (SQLite).\nCHECK constraint (PostgreSQL).")
+
+        Component(db_base, "DB Base", "SQLAlchemy async\ndb/base.py", "get_engine(): SQLite/PostgreSQL URL.\nget_session(): AsyncSession factory.\ninit_db(): CREATE ALL + SQLite triggers.\nregister_sqlite_events(): PRAGMA WAL,\nforeign_keys=ON.")
+
+        Component(api_routes, "REST API Routes", "FastAPI\napi/routes.py", "GET /trades, /positions, /obligations\nGET /reports/eod (JSON/CSV)\nGET /reports/load/{date}\nDELETE /trades/{id} → cancel_trade()\nPOST /batch/load → run_batch_load()")
+
+        Component(config, "Config", "Python\nconfig.py + config.yaml + .env", "MODE=demo → SQLite + файловая система.\nMODE=production → PostgreSQL + SFTP/S3.\nget_db_url(), get_chunk_size(),\nget_incoming_dir(), get_output_dir().")
+    }
+
+    Rel(sftp, batch_proc, "JSON Lines файл", "SFTP/S3\n[демо: Path(incoming_dir)]")
+    Rel(rs, pos_svc, "SOD-остатки", "REST API / File")
+    Rel(scheduler, batch_proc, "run_batch_load(file_path, eod_date)")
+    Rel(scheduler, pos_svc, "load_sod_balances()\ncopy_sod_to_eod()")
+    Rel(batch_proc, trade_svc, "validate_trade()\nbuild_trade_create()\ninsert_trade()")
+    Rel(batch_proc, pos_svc, "apply_leg1_settlements()\ncreate_future_obligations()")
+    Rel(trade_svc, calc_util, "calculate_leg2_amount()")
+    Rel(pos_svc, hash_util, "compute_chain_hash()")
+    Rel(trade_svc, orm, "INSERT raw_trades, trades")
+    Rel(pos_svc, orm, "UPDATE positions\nINSERT audit_log, obligations")
+    Rel(batch_proc, orm, "INSERT load_reports\nINSERT rejected_trades")
+    Rel(orm, db_base, "Base.metadata.create_all()\nAsyncSession")
+    Rel(db_base, db, "SQL (aiosqlite / asyncpg)", "SQLAlchemy async")
+    Rel(api_routes, orm, "SELECT / DELETE")
+    Rel(api_routes, trade_svc, "cancel_trade()")
+    Rel(api_routes, batch_proc, "run_batch_load()")
+    Rel(config, db_base, "get_db_url()")
+    Rel(config, batch_proc, "get_chunk_size()\nget_max_retries()\nget_incoming_dir()")
+    Rel(batch_proc, mon, "Алерты failed_chunks\nload_report статистика")

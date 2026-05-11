@@ -1,0 +1,4562 @@
+[
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 1459140197.69
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 537516132.83
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 912543977.55
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 834816107.22
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 11717.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 49348.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 40741.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 10697.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 43698.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 32651.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 7082.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 6952.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 11140.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 19328.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 20247.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 38118.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 44453.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 6739.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 41781.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 798256476.03
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 1474826656.67
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 1317412220.9
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 830660933.06
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 43618.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 23231.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 5425.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 15463.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 32696.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 27298.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 23210.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 15189.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 19110.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 27059.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 11698.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 11078.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 29898.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 11338.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 28526.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 1771241549.52
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 1405589047.05
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 1710692409.91
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 1594597680.04
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 40142.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 13180.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 29807.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 10164.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 41178.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 24213.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 46198.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 45535.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 28700.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 42837.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 17601.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 9558.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 8003.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 48336.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 19935.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 1659602511.18
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 1977832280.99
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 1782976581.52
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 1799725500.13
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 29911.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 23217.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 34714.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 46660.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 28909.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 15659.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 29260.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 28283.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 18730.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 48920.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 22496.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 49796.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 47469.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 9679.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 44920.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 1452467432.3
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 1301209815.54
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 867216387.73
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 1193390317.78
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 22691.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 46943.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 41500.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 19392.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 49866.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 26252.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 8665.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 20010.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 7103.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 25673.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 31290.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 22546.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 9337.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 18826.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 42170.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 1814551439.71
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 972016821.2
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 1483157997.94
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 1093447851.59
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 47129.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 35071.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 14363.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 22359.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 14150.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 21162.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 41789.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 40322.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 22219.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 43311.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 33077.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 43242.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 31175.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 28723.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 19373.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 1995988666.98
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 707497617.34
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 1240273752.33
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 1633673236.3
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 12185.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 15016.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 46120.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 15484.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 49596.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 32666.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 44086.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 9163.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 30216.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 30009.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 44052.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 35674.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 39676.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 21476.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 41256.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 1791169553.35
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 517221532.91
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 1581082729.04
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 1522565553.54
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 40190.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 22486.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 47006.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 27293.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 12310.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 24234.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 33492.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 15365.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 34735.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 5212.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 22261.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 37806.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 16708.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 38271.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 11973.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 1805777854.76
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 947667187.17
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 1458424242.3
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 1413455317.16
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 15016.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 29504.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 15587.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 40348.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 39757.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 5037.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 44252.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 26243.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 37021.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 6276.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 12331.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 28788.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 25153.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 20692.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 8796.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 861307388.67
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 1351035415.53
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 618135572.44
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 1597861392.27
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 9535.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 39911.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 13241.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 13414.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 48237.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 36148.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 41031.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 15821.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 22370.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 39581.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 44753.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-07",
+    "balance": 32730.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-07",
+    "balance": 18880.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-07",
+    "balance": 40343.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-07",
+    "balance": 18182.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 1569423459.23
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 1098488450.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 1507530439.46
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 1060130753.79
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 38919.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 34588.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 12930.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 21246.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 19725.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 9196.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 27156.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 6378.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 43555.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 41301.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 20080.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 43564.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 19432.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 5471.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 9652.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 1561761419.82
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 588310650.31
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 601100492.17
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 547119437.08
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 26654.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 9643.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 38695.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 20597.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 23250.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 48842.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 36812.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 19040.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 40339.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 13671.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 42423.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 42762.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 35976.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 20925.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 35996.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 1711245496.65
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 785614871.54
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 645396221.34
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 1146576773.61
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 32759.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 31941.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 35606.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 8550.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 49129.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 47824.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 47348.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 11449.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 8972.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 31386.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 27236.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 12161.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 21295.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 17556.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 17465.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 1304428630.87
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 710273445.64
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 775232053.68
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 1193942102.6
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 9940.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 34041.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 41066.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 11416.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 8315.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 47738.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 40427.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 5967.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 11112.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 20491.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 15899.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 31634.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 36826.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 36546.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 19008.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 1796975591.05
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 1853664298.27
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 746955682.1
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 503233067.53
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 30586.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 22380.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 34819.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 23694.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 32722.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 41422.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 48376.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 36894.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 15144.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 17445.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 24445.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 19267.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 8832.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 42957.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 40533.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 591436357.21
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 970407214.65
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 575213505.9
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 1215182775.66
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 39807.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 15317.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 8727.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 38281.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 10250.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 17178.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 9490.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 43996.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 9453.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 49250.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 20414.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 31461.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 12856.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 42334.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 21135.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 1368378586.26
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 559612493.43
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 622975108.24
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 1486059746.71
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 42042.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 39261.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 25733.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 22089.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 18386.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 48891.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 25590.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 20642.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 22407.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 30938.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 13577.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 49019.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 47303.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 24660.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 34964.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 974265794.41
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 1627796738.62
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 608814671.74
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 1187428283.93
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 41896.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 11552.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 9801.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 40234.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 18969.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 38153.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 22380.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 13680.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 27872.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 9508.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 21009.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 29217.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 23676.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 15338.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 33716.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 1750617431.96
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 1555309887.63
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 1417516648.59
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 1980849595.45
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 47858.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 39664.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 5512.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 48769.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 41346.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 24620.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 48475.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 11788.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 13800.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 22332.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 12564.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 12014.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 41256.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 15187.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 22848.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 922634407.19
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 815944482.21
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 1014320431.69
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 1531245693.2
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 22300.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 38122.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 37016.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 21457.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 8329.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 11048.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 46568.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 32759.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 23132.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 7889.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 5232.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-08",
+    "balance": 26859.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-08",
+    "balance": 13573.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-08",
+    "balance": 46753.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-08",
+    "balance": 22167.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 742372964.41
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 1162753267.79
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 1558501170.14
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 1341360297.16
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 12331.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 9931.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 14768.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 40755.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 7361.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 29196.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 43175.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 41210.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 14705.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 33166.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 13352.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 7741.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 25202.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 28897.0
+  },
+  {
+    "participant_id": "BANK_A",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 7614.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 1848386954.79
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 815114807.51
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 874294608.83
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 654190432.51
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 41692.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 31632.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 45675.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 15128.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 20514.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 15649.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 16603.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 32020.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 6624.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 16754.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 26770.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 31982.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 48903.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 21263.0
+  },
+  {
+    "participant_id": "BANK_B",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 22485.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 738796764.47
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 1551917282.21
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 1073812583.9
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 558086911.5
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 35847.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 19577.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 18079.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 35166.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 27915.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 25000.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 19915.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 19609.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 6550.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 48255.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 17656.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 31113.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 26512.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 23258.0
+  },
+  {
+    "participant_id": "BANK_C",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 9549.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 1950333656.07
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 918687489.08
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 1462222607.91
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 1099517576.54
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 40141.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 26702.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 6808.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 12559.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 22118.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 16702.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 43049.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 22397.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 7507.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 12104.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 44096.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 33479.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 27654.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 25557.0
+  },
+  {
+    "participant_id": "BANK_D",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 33599.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 1409313279.96
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 1267134589.5
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 1077793150.02
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 1364882065.24
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 21693.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 7908.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 33577.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 5110.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 39073.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 40287.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 48950.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 17912.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 28869.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 33265.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 9585.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 48531.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 26639.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 45839.0
+  },
+  {
+    "participant_id": "BANK_E",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 25572.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 1495081214.4
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 686937973.5
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 1850070252.65
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 1260683756.05
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 48705.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 31764.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 26376.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 31371.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 24376.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 41333.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 13341.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 17572.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 32554.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 48576.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 29847.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 49388.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 16405.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 45338.0
+  },
+  {
+    "participant_id": "FUND_1",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 42296.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 951424811.85
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 1321905819.7
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 500608909.55
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 930370575.3
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 33173.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 43009.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 44758.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 47906.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 26118.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 35473.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 33952.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 33977.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 49277.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 19005.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 38500.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 36010.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 16120.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 48178.0
+  },
+  {
+    "participant_id": "FUND_2",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 10557.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 925679607.49
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 1495780754.46
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 1428891208.04
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 640080800.11
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 20392.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 49092.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 25343.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 19722.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 18050.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 14656.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 6600.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 8028.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 21046.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 36138.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 45060.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 9772.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 34846.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 32160.0
+  },
+  {
+    "participant_id": "BROKER_1",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 46272.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 1363506349.11
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 1577518873.25
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 1075967701.09
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 1099479294.31
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 14671.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 47995.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 5363.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 11985.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 32862.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 19341.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 16526.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 38944.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 35444.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 8291.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 41530.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 21331.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 12953.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 34914.0
+  },
+  {
+    "participant_id": "BROKER_2",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 13738.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_RUB",
+    "balance_type": "CASH",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 100.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_USD",
+    "balance_type": "CASH",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 1702124902.58
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_EUR",
+    "balance_type": "CASH",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 1501366598.88
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "CASH_CNY",
+    "balance_type": "CASH",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 1981838679.6
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A0ZYJT2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 44023.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A101NJ6",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 25794.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A103HT3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 34004.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A105A95",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 45150.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A106375",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 38081.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A1075T3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 32966.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A108GX5",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 40905.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A109GX1",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 34223.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A110GX2",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 15430.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A111GX3",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 36108.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A112USD1",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 34495.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A113USD2",
+    "balance_type": "SECURITIES",
+    "currency": "USD",
+    "position_date": "2026-05-10",
+    "balance": 21986.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A114EUR1",
+    "balance_type": "SECURITIES",
+    "currency": "EUR",
+    "position_date": "2026-05-10",
+    "balance": 21203.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A115CNY1",
+    "balance_type": "SECURITIES",
+    "currency": "CNY",
+    "position_date": "2026-05-10",
+    "balance": 46789.0
+  },
+  {
+    "participant_id": "CORP_1",
+    "instrument_id": "RU000A116CORP",
+    "balance_type": "SECURITIES",
+    "currency": "RUB",
+    "position_date": "2026-05-10",
+    "balance": 23173.0
+  }
+]

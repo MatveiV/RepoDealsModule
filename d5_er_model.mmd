@@ -1,0 +1,137 @@
+erDiagram
+    PARTICIPANTS {
+        varchar participant_id PK
+        varchar name
+        boolean is_active
+    }
+
+    INSTRUMENTS {
+        varchar instrument_id PK
+        varchar short_name
+        varchar instrument_type
+        char currency
+        boolean repo_eligible
+        varchar settlement_mode
+        varchar day_count_convention
+        boolean is_active
+        date valid_from
+        date valid_to
+    }
+
+    RAW_TRADES {
+        integer id PK
+        varchar idempotency_key UK
+        varchar source
+        json payload
+        datetime received_at
+        varchar processing_status
+        text error_message
+    }
+
+    TRADES {
+        text trade_id PK
+        varchar external_trade_id
+        varchar idempotency_key UK
+        integer raw_trade_id FK
+        varchar party_1_id
+        varchar party_2_id
+        varchar initiator_role
+        varchar participant_id FK
+        varchar counterparty_id FK
+        varchar instrument_id FK
+        numeric quantity
+        numeric leg1_amount
+        numeric leg2_amount
+        numeric rate
+        date trade_date
+        date leg1_settlement_date
+        date leg2_settlement_date
+        integer days_to_maturity
+        varchar status
+        datetime created_at
+        datetime updated_at
+    }
+
+    POSITIONS {
+        integer position_id PK
+        varchar participant_id FK
+        varchar instrument_id
+        varchar balance_type
+        char currency
+        date position_date
+        numeric balance
+        numeric frozen_balance
+        varchar status
+        boolean inconsistent
+        datetime calculated_at
+    }
+
+    FUTURE_OBLIGATIONS {
+        integer obligation_id PK
+        text trade_id FK
+        varchar participant_id FK
+        varchar instrument_id
+        varchar balance_type
+        varchar obligation_type
+        date obligation_date
+        numeric quantity
+        numeric amount
+        char currency
+        varchar status
+        datetime created_at
+        datetime resolved_at
+    }
+
+    POSITION_AUDIT_LOG {
+        integer log_id PK
+        integer position_id FK
+        varchar participant_id
+        varchar instrument_id
+        varchar balance_type
+        date position_date
+        varchar change_type
+        numeric delta
+        numeric balance_before
+        numeric balance_after
+        text trade_id FK
+        integer chunk_id
+        varchar operator
+        varchar prev_log_hash
+        datetime logged_at
+    }
+
+    REJECTED_TRADES {
+        integer id PK
+        varchar idempotency_key
+        integer raw_trade_id FK
+        varchar rejection_type
+        text rejection_detail
+        json payload
+        integer chunk_id
+        datetime created_at
+        datetime resolved_at
+        varchar resolved_by
+    }
+
+    LOAD_REPORTS {
+        integer report_id PK
+        date eod_date UK
+        varchar file_name
+        datetime started_at
+        datetime finished_at
+        integer total_records
+        integer committed
+        integer rejected
+        integer duplicates
+        integer failed_chunks
+        varchar status
+    }
+
+    PARTICIPANTS ||--o{ TRADES : "participant_id / counterparty_id"
+    INSTRUMENTS ||--o{ TRADES : "instrument_id"
+    RAW_TRADES ||--o{ TRADES : "raw_trade_id"
+    RAW_TRADES ||--o{ REJECTED_TRADES : "raw_trade_id"
+    TRADES ||--o{ FUTURE_OBLIGATIONS : "trade_id"
+    TRADES ||--o{ POSITION_AUDIT_LOG : "trade_id"
+    POSITIONS ||--o{ POSITION_AUDIT_LOG : "position_id"
+    PARTICIPANTS ||--o{ POSITIONS : "participant_id"

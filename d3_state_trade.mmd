@@ -1,0 +1,41 @@
+stateDiagram-v2
+    direction LR
+
+    [*] --> ACTIVE : Batch-загрузка (trade_date = EOD-дата)\nPre-check OK → проводки Leg 1 применены\nFuture Obligations созданы\n[статус NEW пропускается в batch-режиме]
+
+    [*] --> NEW : Теоретически: trade_date > EOD-даты\n[защитная ветка, в MVP не используется]
+
+    NEW --> ACTIVE : trade_date наступил\nПроводки Leg 1 применены
+
+    NEW --> CANCELLED : DELETE /api/v1/repo/trades/{id}\nУсловие: current_date < leg1_settlement_date\n→ Future Obligations → CANCELLED\n→ position_audit_log: TRADE_CANCELLED
+
+    NEW --> REJECTED : Pre-check FAIL (INSUFFICIENT_BALANCE)\nили VALIDATION_ERROR в batch
+
+    ACTIVE --> CLOSED : maturity_date наступила\nLEG2_SETTLED получен от НКЦ\nПроводки Leg 2 применены\n→ Future Obligations → FULFILLED\n→ position_audit_log: LEG2_APPLY
+
+    ACTIVE --> REJECTED : Pre-check FAIL при Leg 2\n(INSUFFICIENT_BALANCE)
+
+    CANCELLED --> [*]
+    REJECTED --> [*] : Запись в rejected_trades\nАлерт мониторинга
+
+    CLOSED --> [*]
+
+    ACTIVE --> DEFAULTED : [Этап 2 — вне MVP]\nmaturity_date истёк,\nLEG2_FAILED получен от НКЦ
+
+    ACTIVE --> EARLY_TERMINATED : [Этап 2 — вне MVP]\nДосрочное закрытие\nпо соглашению сторон
+
+    DEFAULTED --> [*] : frozen_balance установлен\nАлерт риск-отдела
+
+    EARLY_TERMINATED --> [*] : Пересчёт Leg2 по ActualDays\nFuture Obligations пересозданы
+
+    note right of ACTIVE
+        В batch-режиме (MVP):
+        trade_date = leg1_settlement_date = EOD-дата
+        → сделка сразу ACTIVE, минуя NEW
+    end note
+
+    note right of DEFAULTED
+        Этап 2 (вне MVP).
+        В MVP: LEG2_FAILED → алерт,
+        ручной разбор оператором.
+    end note

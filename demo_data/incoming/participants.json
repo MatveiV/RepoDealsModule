@@ -1,0 +1,52 @@
+[
+  {
+    "participant_id": "BANK_A",
+    "name": "Банк А (Альфа)",
+    "is_active": true
+  },
+  {
+    "participant_id": "BANK_B",
+    "name": "Банк Б (Бета)",
+    "is_active": true
+  },
+  {
+    "participant_id": "BANK_C",
+    "name": "Банк В (Гамма)",
+    "is_active": true
+  },
+  {
+    "participant_id": "BANK_D",
+    "name": "Банк Г (Дельта)",
+    "is_active": true
+  },
+  {
+    "participant_id": "BANK_E",
+    "name": "Банк Д (Эпсилон)",
+    "is_active": true
+  },
+  {
+    "participant_id": "FUND_1",
+    "name": "Инвестиционный фонд 1",
+    "is_active": true
+  },
+  {
+    "participant_id": "FUND_2",
+    "name": "Инвестиционный фонд 2",
+    "is_active": true
+  },
+  {
+    "participant_id": "BROKER_1",
+    "name": "Брокер 1",
+    "is_active": true
+  },
+  {
+    "participant_id": "BROKER_2",
+    "name": "Брокер 2",
+    "is_active": true
+  },
+  {
+    "participant_id": "CORP_1",
+    "name": "Корпоративный клиент 1",
+    "is_active": true
+  }
+]

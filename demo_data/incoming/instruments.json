@@ -1,0 +1,178 @@
+[
+  {
+    "instrument_id": "RU000A0ZYJT2",
+    "short_name": "ОФЗ-26225",
+    "instrument_type": "BOND",
+    "currency": "RUB",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2020-01-01"
+  },
+  {
+    "instrument_id": "RU000A101NJ6",
+    "short_name": "ОФЗ-26240",
+    "instrument_type": "BOND",
+    "currency": "RUB",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2021-01-01"
+  },
+  {
+    "instrument_id": "RU000A103HT3",
+    "short_name": "ОФЗ-26241",
+    "instrument_type": "BOND",
+    "currency": "RUB",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2022-01-01"
+  },
+  {
+    "instrument_id": "RU000A105A95",
+    "short_name": "ОФЗ-26243",
+    "instrument_type": "BOND",
+    "currency": "RUB",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2023-01-01"
+  },
+  {
+    "instrument_id": "RU000A106375",
+    "short_name": "ОФЗ-26244",
+    "instrument_type": "BOND",
+    "currency": "RUB",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2023-06-01"
+  },
+  {
+    "instrument_id": "RU000A1075T3",
+    "short_name": "ОФЗ-26245",
+    "instrument_type": "BOND",
+    "currency": "RUB",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2024-01-01"
+  },
+  {
+    "instrument_id": "RU000A108GX5",
+    "short_name": "ОФЗ-26246",
+    "instrument_type": "BOND",
+    "currency": "RUB",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2024-06-01"
+  },
+  {
+    "instrument_id": "RU000A109GX1",
+    "short_name": "ОФЗ-26247",
+    "instrument_type": "BOND",
+    "currency": "RUB",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2025-01-01"
+  },
+  {
+    "instrument_id": "RU000A110GX2",
+    "short_name": "ОФЗ-26248",
+    "instrument_type": "BOND",
+    "currency": "RUB",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2025-06-01"
+  },
+  {
+    "instrument_id": "RU000A111GX3",
+    "short_name": "ОФЗ-26249",
+    "instrument_type": "BOND",
+    "currency": "RUB",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2026-01-01"
+  },
+  {
+    "instrument_id": "RU000A112USD1",
+    "short_name": "ЕВРОБОНД-USD-1",
+    "instrument_type": "BOND",
+    "currency": "USD",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/360",
+    "is_active": true,
+    "valid_from": "2023-01-01"
+  },
+  {
+    "instrument_id": "RU000A113USD2",
+    "short_name": "ЕВРОБОНД-USD-2",
+    "instrument_type": "BOND",
+    "currency": "USD",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/360",
+    "is_active": true,
+    "valid_from": "2024-01-01"
+  },
+  {
+    "instrument_id": "RU000A114EUR1",
+    "short_name": "ЕВРОБОНД-EUR-1",
+    "instrument_type": "BOND",
+    "currency": "EUR",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2023-06-01"
+  },
+  {
+    "instrument_id": "RU000A115CNY1",
+    "short_name": "ЮАНЬ-БОНД-1",
+    "instrument_type": "BOND",
+    "currency": "CNY",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2025-01-01"
+  },
+  {
+    "instrument_id": "RU000A116CORP",
+    "short_name": "КОРП-БОНД-1",
+    "instrument_type": "CORP_BOND",
+    "currency": "RUB",
+    "repo_eligible": true,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2024-01-01"
+  },
+  {
+    "instrument_id": "RU000A117NOREPO",
+    "short_name": "НЕ-РЕПО-БОНД",
+    "instrument_type": "BOND",
+    "currency": "RUB",
+    "repo_eligible": false,
+    "settlement_mode": "T+0",
+    "day_count_convention": "ACT/365",
+    "is_active": true,
+    "valid_from": "2024-01-01"
+  }
+]

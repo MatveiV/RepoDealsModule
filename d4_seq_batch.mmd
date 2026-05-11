@@ -1,0 +1,87 @@
+sequenceDiagram
+    autonumber
+    participant TS as Торговая система
+    participant SRC as SFTP/S3<br/>[демо: demo_data/incoming/]
+    participant BP as BatchProcessor<br/>(processor.py)
+    participant TS2 as TradeService<br/>(trade_service.py)
+    participant PS as PositionService<br/>(position_service.py)
+    participant DB as БД<br/>(SQLite/PostgreSQL)
+    participant MON as Мониторинг<br/>[демо: stdout]
+
+    Note over TS,MON: Ночная пакетная загрузка (22:00–02:00 МСК) / make demo / POST /batch/load
+
+    TS->>SRC: Загрузить файл сделок (JSON Lines)
+    BP->>SRC: Скачать файл trades_YYYY-MM-DD.jsonl
+    SRC-->>BP: Поток JSON Lines
+
+    BP->>DB: INSERT load_reports (status=IN_PROGRESS, started_at)
+
+    loop Для каждого чанка (chunk_size=1000 записей)
+        BP->>DB: BEGIN TRANSACTION (чанк)
+
+        loop Для каждой записи в чанке
+            BP->>DB: SAVEPOINT sp_record_{chunk}_{n}
+
+            BP->>BP: Парсинг JSON → IncomingTrade (Pydantic)
+            BP->>DB: SELECT idempotency_key → dedup-проверка
+            DB-->>BP: null / existing
+
+            alt DUPLICATE
+                BP->>DB: ROLLBACK TO SAVEPOINT
+                BP->>DB: RELEASE SAVEPOINT
+                Note right of BP: duplicates++, CONTINUE
+            else Уникальная запись
+                BP->>TS2: validate_trade(session, incoming)
+                TS2->>DB: GET Participant(party_1), Participant(party_2)
+                TS2->>DB: GET Instrument(asset) → repo_eligible?
+                DB-->>TS2: OK / NOT_FOUND / NOT_ELIGIBLE
+
+                alt VALIDATION_ERROR / INSTRUMENT_NOT_ELIGIBLE / PARTICIPANT_NOT_FOUND
+                    BP->>DB: ROLLBACK TO SAVEPOINT
+                    BP->>DB: INSERT rejected_trades (rejection_type, payload)
+                    BP->>DB: RELEASE SAVEPOINT
+                    Note right of BP: rejected++, CONTINUE
+                else Валидация OK
+                    BP->>TS2: build_trade_create(incoming, eod_date)
+                    TS2->>TS2: map_roles(initiator_role)<br/>→ participant_id, counterparty_id<br/>[fallback DEFAULT_SELLER + WARNING]
+                    TS2->>TS2: calculate_leg2_amount(leg1_amount, rate, days)<br/>ROUND(sum*rate*Days/365, 2, HALF_UP)
+                    TS2-->>BP: TradeCreate(status=ACTIVE)
+
+                    BP->>PS: apply_leg1_settlements(trade, eod_date)
+                    PS->>DB: SELECT balance FROM positions FOR UPDATE<br/>(participant, instrument, EOD)
+                    DB-->>PS: current_balance
+
+                    alt Pre-check FAIL: balance + delta < 0
+                        PS-->>BP: InsufficientBalanceError
+                        BP->>DB: ROLLBACK TO SAVEPOINT
+                        BP->>DB: INSERT rejected_trades (INSUFFICIENT_BALANCE)
+                        BP->>DB: RELEASE SAVEPOINT
+                        Note right of BP: rejected++, CONTINUE
+                    else Pre-check OK
+                        BP->>DB: INSERT raw_trades (payload, status=COMMITTED)
+                        BP->>TS2: insert_trade(session, trade_create)
+                        TS2->>DB: INSERT trades (trade_id UUID, все поля)
+                        PS->>DB: UPDATE positions SET balance = balance + delta<br/>[CHECK balance>=0 — последний рубеж]
+                        PS->>DB: INSERT position_audit_log<br/>(delta, balance_before, balance_after,<br/>prev_log_hash=SHA256)
+                        BP->>PS: create_future_obligations(trade)
+                        PS->>DB: INSERT future_obligations x4<br/>(LEG2_PAY_CASH, LEG2_RECEIVE_SECURITIES,<br/>LEG2_RECEIVE_CASH, LEG2_RETURN_SECURITIES)
+                        BP->>DB: RELEASE SAVEPOINT sp_record
+                        Note right of BP: committed++
+                    end
+                end
+            end
+        end
+
+        alt Системная ошибка (IntegrityError / DBAPIError)
+            BP->>DB: ROLLBACK (весь чанк)
+            BP->>BP: Повтор чанка (до max_retries=3)
+            BP->>MON: Алерт: failed_chunks++
+        else Чанк обработан
+            BP->>DB: COMMIT
+        end
+    end
+
+    BP->>DB: UPDATE load_reports<br/>(status=COMPLETED/COMPLETED_WITH_ERRORS,<br/>total, committed, rejected, duplicates, failed_chunks)
+    BP->>MON: Вывод load_report в stdout/файл
+
+    Note over BP,MON: Демо: python scripts/run_demo.py выводит итоговую статистику в консоль

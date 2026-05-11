@@ -1,0 +1,51 @@
+# REPO Module Configuration
+# Switch between demo and production mode via MODE env variable or this file
+
+mode: demo  # demo | production
+
+demo:
+  database:
+    type: sqlite
+    path: "repo_module.db"  # use ":memory:" for in-memory
+  incoming_dir: "demo_data/incoming"
+  output_dir: "demo_data/out"
+  log_level: INFO
+  log_to_file: true
+  log_file: "demo_data/out/repo_module.log"
+
+production:
+  database:
+    type: postgresql
+    host: "${DB_HOST:localhost}"
+    port: "${DB_PORT:5432}"
+    name: "${DB_NAME:repo_module}"
+    user: "${DB_USER:repo_user}"
+    password: "${DB_PASSWORD}"
+    pool_size: 10
+    max_overflow: 20
+  sftp:
+    host: "${SFTP_HOST}"
+    port: "${SFTP_PORT:22}"
+    user: "${SFTP_USER}"
+    key_path: "${SFTP_KEY_PATH}"
+    remote_dir: "${SFTP_REMOTE_DIR:/repo/incoming}"
+  s3:
+    endpoint: "${S3_ENDPOINT}"
+    bucket: "${S3_BUCKET}"
+    access_key: "${S3_ACCESS_KEY}"
+    secret_key: "${S3_SECRET_KEY}"
+  kafka:
+    bootstrap_servers: "${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}"
+    audit_topic: "repo.audit.log"
+    alert_topic: "repo.alerts"
+  log_level: INFO
+
+batch:
+  chunk_size: 1000
+  max_retries: 3
+  retry_delay_seconds: 5
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  prefix: "/api/v1/repo"

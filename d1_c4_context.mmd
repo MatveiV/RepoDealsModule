@@ -1,0 +1,18 @@
+C4Context
+    title C4 Level 1: Контекстная диаграмма — Модуль обработки сделок РЕПО (MVP v1.0)
+
+    Person(ops, "Оператор / Риск-аналитик", "Мониторинг позиций,\nразбор инцидентов,\nотмена сделок (NEW)")
+
+    System(repo, "Модуль обработки сделок РЕПО", "Регистрация и хранение сделок РЕПО.\nЧанковая пакетная обработка (SAVEPOINT).\nРасчёт EOD-позиций участников.\nВедение Future Obligations.\nАудит изменений (hash-chain SHA-256).\n\nДемо-режим: SQLite + файловая система.\nПрод-режим: PostgreSQL 15+ + SFTP/S3.")
+
+    System_Ext(ts, "Торговая система (ТС)", "Биржевая платформа.\nЕжедневно поставляет файл\nсо сделками РЕПО (SFTP/S3,\nJSON Lines, UTF-8).")
+    System_Ext(rs, "Расчётная система (НКЦ)", "Учёт денежных расчётов\nи передачи ценных бумаг.\nПоставляет SOD-остатки.\nПодтверждает Leg 2 (LEG2_SETTLED).")
+    System_Ext(mon, "Система мониторинга", "stdout / файл (демо).\nPrometheus / PagerDuty (прод).\nПолучает алерты о сбоях,\nfailed_chunks, инцидентах.")
+    System_Ext(dep, "Депозитарий / Справочники", "Мастер-данные инструментов\n(instruments) и участников.\nРепликация ежедневно до 21:30 МСК.")
+
+    Rel(ts, repo, "Пакет сделок РЕПО (1 раз/сутки)", "SFTP(TLS)/S3, JSON Lines\n[демо: demo_data/incoming/]")
+    Rel(rs, repo, "SOD-остатки (ежедневно)", "REST API / File\n[демо: sod_balances.json]")
+    Rel(dep, repo, "Справочники инструментов\nи участников", "REST API / File\n[демо: instruments.json, participants.json]")
+    Rel(repo, rs, "Триггер расчётов Leg 1/Leg 2", "REST API / Kafka\n[демо: логирование в stdout]")
+    Rel(repo, mon, "Алерты, метрики, load_report", "HTTP / Prometheus\n[демо: stdout/файл]")
+    Rel(ops, repo, "Просмотр позиций, обязательств,\nотмена сделок (NEW), запуск batch", "REST API (GET/DELETE/POST)\nhttp://localhost:8000/api/v1/repo")

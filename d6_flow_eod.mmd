@@ -1,0 +1,77 @@
+flowchart TD
+    START([Старт EOD-расчёта за дату D\nrun_demo.py / POST /batch/load])
+    --> LOAD_SOD
+
+    LOAD_SOD[/"load_sod_balances(session, balances, D)\nЗагрузка SOD-остатков в positions\n(status=SOD)"/]
+    --> COPY_EOD
+
+    COPY_EOD["copy_sod_to_eod(session, D)\nКопирование SOD → EOD\n(status=EOD, balance=sod.balance)"]
+    --> RUN_BATCH
+
+    RUN_BATCH["run_batch_load(file_path, eod_date)\nBatchProcessor.process_file()"]
+    --> BATCH_OK{Batch завершён\nbез failed_chunks?}
+
+    BATCH_OK -- failed_chunks > 0 --> ALERT_BATCH[Алерт дежурному\nload_report: COMPLETED_WITH_ERRORS]
+    BATCH_OK -- OK --> GET_LEG1
+    ALERT_BATCH --> GET_LEG1
+
+    GET_LEG1["Выбрать ACTIVE-сделки:\ntrade_date = D\n(применены в batch, статус ACTIVE)"]
+    --> LEG1_DONE{Leg 1 проводки\nприменены в batch?}
+
+    LEG1_DONE -- Да --> GET_LEG2
+    LEG1_DONE -- Нет --> APPLY_LEG1
+
+    APPLY_LEG1["apply_leg1_settlements(session, trade, D)\nparticipant: −qty, +leg1_amount\ncounterparty: +qty, −leg1_amount"]
+    --> PRECHECK1{Pre-check:\nbalance + delta >= 0?}
+
+    PRECHECK1 -- FAIL --> REJECT1["trade → REJECTED\nINSERT rejected_trades\n(INSUFFICIENT_BALANCE)\nАлерт мониторинга"]
+    REJECT1 --> GET_LEG2
+    PRECHECK1 -- OK --> UPD_POS1
+
+    UPD_POS1["UPDATE positions (balance += delta)\nINSERT position_audit_log\n(SHA-256 hash-chain)"]
+    --> CHECK_DB1{CHECK balance>=0\nв БД (триггер SQLite\n/ constraint PostgreSQL)?}
+
+    CHECK_DB1 -- CheckViolation --> CRIT1["КРИТИЧЕСКИЙ АЛЕРТ!\nБаг в pre-check логике\nfailed_chunks++\nТребует немедленного расследования"]
+    CHECK_DB1 -- OK --> GET_LEG2
+
+    GET_LEG2["Выбрать ACTIVE-сделки:\nleg2_settlement_date = D"]
+    --> HAS_LEG2{Есть сделки\nLeg 2?}
+
+    HAS_LEG2 -- Нет --> SAVE_EOD
+    HAS_LEG2 -- Да --> GET_CONFIRM
+
+    GET_CONFIRM[/"Запрос settlement_confirmation\nот Расчётной системы\n(external_trade_id → trade_id)"/]
+    --> CONFIRM_TYPE{LEG2_SETTLED\nили LEG2_FAILED?}
+
+    CONFIRM_TYPE -- LEG2_FAILED --> MVP_DEFAULT["[MVP] Алерт риск-отдела\nРучной разбор\n(Этап 2: → DEFAULTED)"]
+    MVP_DEFAULT --> HAS_LEG2
+
+    CONFIRM_TYPE -- LEG2_SETTLED --> PRECHECK2
+
+    PRECHECK2{Pre-check Leg 2:\nbalance + delta >= 0?}
+    PRECHECK2 -- FAIL --> REJECT2["REJECTED + алерт"]
+    REJECT2 --> HAS_LEG2
+    PRECHECK2 -- OK --> APPLY_LEG2
+
+    APPLY_LEG2["apply_leg2_settlements(session, trade, D)\nparticipant: +qty, −leg2_amount\ncounterparty: −qty, +leg2_amount\ntrade.status → CLOSED\nINSERT position_audit_log"]
+    --> CLOSE_OBL
+
+    CLOSE_OBL["UPDATE future_obligations\nstatus → FULFILLED\nresolved_at = NOW()"]
+    --> HAS_LEG2
+
+    SAVE_EOD[/"Позиции status=EOD уже актуальны\n(обновлялись инкрементально)\ncalculated_at = NOW()"/]
+    --> CHECK_INCONS{Есть positions\ninconsistent = TRUE?}
+
+    CHECK_INCONS -- Да --> ALERT_INCONS["Алерт: POSITION_INCONSISTENCY\nEOD-отчёт помечен INCONSISTENT\nРучной разбор"]
+    CHECK_INCONS -- Нет --> GEN_REPORT
+    ALERT_INCONS --> GEN_REPORT
+
+    GEN_REPORT[/"Сформировать отчёты:\nEOD Position Report (CSV/JSON)\nFuture Obligations Register\nLoad Report (total/committed/rejected)"/]
+    --> END([Конец EOD-расчёта\nload_report: COMPLETED])
+
+    style START fill:#1F4E79,color:#fff,stroke:#1F4E79
+    style END fill:#1F4E79,color:#fff,stroke:#1F4E79
+    style CRIT1 fill:#FFEBEE,stroke:#C62828,color:#B71C1C
+    style ALERT_INCONS fill:#FFF9C4,stroke:#F57F17,color:#E65100
+    style ALERT_BATCH fill:#FFF9C4,stroke:#F57F17,color:#E65100
+    style MVP_DEFAULT fill:#E8F4FD,stroke:#1565C0,color:#0D47A1

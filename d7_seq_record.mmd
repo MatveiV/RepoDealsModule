@@ -1,0 +1,114 @@
+sequenceDiagram
+    autonumber
+    participant LINE as JSON-строка<br/>из файла
+    participant BP as BatchProcessor<br/>_process_record()
+    participant TS as TradeService
+    participant PS as PositionService
+    participant DB as БД<br/>(SQLite / PostgreSQL)
+
+    Note over LINE,DB: Обработка одной записи внутри чанка (SAVEPOINT sp_record активен)
+
+    LINE->>BP: raw JSON line
+
+    BP->>BP: json.loads(line) → dict
+    BP->>BP: IncomingTrade(**raw_data)<br/>[Pydantic валидация схемы:<br/>sum>0, rate∈[0,5],<br/>maturity_date > trade_date,<br/>party_1 ≠ party_2]
+
+    alt PydanticValidationError
+        BP->>DB: ROLLBACK TO SAVEPOINT
+        BP->>DB: INSERT rejected_trades (VALIDATION_ERROR)
+        BP->>DB: RELEASE SAVEPOINT
+        Note right of BP: rejected++, CONTINUE
+    end
+
+    BP->>BP: idempotency_key =<br/>external_trade_id + "_" + trade_date
+
+    BP->>DB: SELECT trade_id FROM trades<br/>WHERE idempotency_key = ?
+    DB-->>BP: None / UUID
+
+    alt DUPLICATE (idempotency_key существует)
+        BP->>DB: ROLLBACK TO SAVEPOINT
+        BP->>DB: RELEASE SAVEPOINT
+        Note right of BP: duplicates++, CONTINUE
+    end
+
+    BP->>DB: INSERT raw_trades<br/>(idempotency_key, payload,<br/>source='BATCH', status='PROCESSING')
+    DB-->>BP: raw_trade_id
+
+    BP->>TS: validate_trade(session, incoming)
+    TS->>DB: session.get(Participant, party_1)
+    TS->>DB: session.get(Participant, party_2)
+    TS->>DB: session.get(Instrument, asset)
+    DB-->>TS: объекты / None
+
+    alt PARTICIPANT_NOT_FOUND / INSTRUMENT_NOT_ELIGIBLE
+        TS-->>BP: ValidationError(rejection_type, detail)
+        BP->>DB: ROLLBACK TO SAVEPOINT
+        BP->>DB: INSERT rejected_trades
+        BP->>DB: RELEASE SAVEPOINT
+        Note right of BP: rejected++, CONTINUE
+    end
+
+    BP->>TS: build_trade_create(session, incoming, raw_trade_id, eod_date)
+
+    TS->>TS: map_roles(initiator_role)
+    alt initiator_role = "SECURITY_SELLER"
+        TS->>TS: participant=party_1, counterparty=party_2
+    else initiator_role = "SECURITY_BUYER"
+        TS->>TS: participant=party_2, counterparty=party_1
+    else initiator_role отсутствует → FALLBACK
+        TS->>TS: participant=party_1, counterparty=party_2<br/>initiator_role="DEFAULT_SELLER"
+        TS->>TS: logger.WARNING(external_trade_id, applied_fallback)
+    else initiator_role нераспознан
+        TS-->>BP: ValidationError(INITIATOR_ROLE_UNKNOWN)
+        BP->>DB: ROLLBACK TO SAVEPOINT
+        BP->>DB: INSERT rejected_trades
+        BP->>DB: RELEASE SAVEPOINT
+        Note right of BP: rejected++, CONTINUE
+    end
+
+    TS->>TS: leg1_settlement_date = trade_date (T+0)<br/>days = leg2_settlement_date - leg1_settlement_date
+    TS->>TS: calculate_leg2_amount(leg1_amount, rate, days)<br/>Repo_Income = ROUND(sum*rate*days/365, 2, HALF_UP)<br/>leg2_amount = ROUND(sum + Repo_Income, 2, HALF_UP)
+    TS->>TS: status = ACTIVE (trade_date <= eod_date)
+    TS-->>BP: TradeCreate
+
+    BP->>PS: apply_leg1_settlements(session, trade, eod_date)
+    PS->>DB: SELECT balance FROM positions FOR UPDATE<br/>(participant, instrument, SECURITIES, EOD)
+    DB-->>PS: current_balance
+
+    alt balance + (-quantity) < 0 → INSUFFICIENT_BALANCE
+        PS-->>BP: InsufficientBalanceError
+        BP->>DB: ROLLBACK TO SAVEPOINT
+        BP->>DB: INSERT rejected_trades (INSUFFICIENT_BALANCE)
+        BP->>DB: RELEASE SAVEPOINT
+        Note right of BP: rejected++, CONTINUE
+    end
+
+    PS->>DB: SELECT balance FROM positions FOR UPDATE<br/>(counterparty, CASH_RUB, CASH, EOD)
+    DB-->>PS: current_cash_balance
+
+    alt cash_balance - leg1_amount < 0 → INSUFFICIENT_BALANCE
+        PS-->>BP: InsufficientBalanceError
+        BP->>DB: ROLLBACK TO SAVEPOINT
+        BP->>DB: INSERT rejected_trades (INSUFFICIENT_BALANCE)
+        BP->>DB: RELEASE SAVEPOINT
+        Note right of BP: rejected++, CONTINUE
+    end
+
+    Note over BP,DB: Шаги ниже — системные ошибки → ROLLBACK всего чанка
+
+    BP->>TS: insert_trade(session, trade_create)
+    TS->>DB: INSERT trades (trade_id=uuid4(), все поля)
+
+    PS->>DB: UPDATE positions (participant, -qty, SECURITIES)<br/>UPDATE positions (participant, +leg1_amount, CASH)<br/>UPDATE positions (counterparty, +qty, SECURITIES)<br/>UPDATE positions (counterparty, -leg1_amount, CASH)<br/>[CHECK balance>=0 — последний рубеж защиты]
+
+    PS->>PS: compute_chain_hash(prev_hash, record_data)<br/>SHA-256(prev_hash + SHA-256(record))
+
+    PS->>DB: INSERT position_audit_log x4<br/>(delta, balance_before, balance_after, prev_log_hash)
+
+    BP->>PS: create_future_obligations(session, trade)
+    PS->>DB: INSERT future_obligations x4<br/>(LEG2_PAY_CASH, LEG2_RECEIVE_SECURITIES,<br/>LEG2_RECEIVE_CASH, LEG2_RETURN_SECURITIES)
+
+    BP->>DB: UPDATE raw_trades SET status='COMMITTED'
+    BP->>DB: RELEASE SAVEPOINT sp_record
+
+    Note over LINE,DB: Запись успешно обработана → committed++
