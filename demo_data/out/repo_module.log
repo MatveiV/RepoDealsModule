@@ -1,0 +1,26 @@
+{"timestamp": "2026-05-11T21:11:04.292818Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Starting REPO Module in DEMO mode"}
+{"timestamp": "2026-05-11T21:11:04.343159Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Database initialized"}
+{"timestamp": "2026-05-11T21:20:53.122967Z", "level": "INFO", "logger": "repo_module.api.app", "message": "REPO Module shutdown complete"}
+{"timestamp": "2026-05-11T21:31:13.535599Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Starting REPO Module in DEMO mode"}
+{"timestamp": "2026-05-11T21:31:15.571669Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Database initialized"}
+{"timestamp": "2026-05-11T21:31:15.898929Z", "level": "INFO", "logger": "repo_module.api.app", "message": "REPO Module shutdown complete"}
+{"timestamp": "2026-05-11T21:33:41.104971Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Starting REPO Module in DEMO mode"}
+{"timestamp": "2026-05-11T21:33:41.160846Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Database initialized"}
+{"timestamp": "2026-05-11T22:07:25.081699Z", "level": "INFO", "logger": "repo_module.api.app", "message": "REPO Module shutdown complete"}
+{"timestamp": "2026-05-11T22:07:26.873006Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Starting REPO Module in DEMO mode"}
+{"timestamp": "2026-05-11T22:07:26.929336Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Database initialized"}
+{"timestamp": "2026-05-11T22:07:27.032794Z", "level": "INFO", "logger": "repo_module.api.app", "message": "REPO Module shutdown complete"}
+{"timestamp": "2026-05-11T22:07:28.574789Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Starting REPO Module in DEMO mode"}
+{"timestamp": "2026-05-11T22:07:28.626751Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Database initialized"}
+{"timestamp": "2026-05-11T22:08:50.629505Z", "level": "INFO", "logger": "repo_module.api.app", "message": "REPO Module shutdown complete"}
+{"timestamp": "2026-05-11T22:08:52.601978Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Starting REPO Module in DEMO mode"}
+{"timestamp": "2026-05-11T22:08:52.657046Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Database initialized"}
+{"timestamp": "2026-05-11T22:09:25.106044Z", "level": "INFO", "logger": "repo_module.api.app", "message": "REPO Module shutdown complete"}
+{"timestamp": "2026-05-11T22:09:26.564189Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Starting REPO Module in DEMO mode"}
+{"timestamp": "2026-05-11T22:09:26.622260Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Database initialized"}
+{"timestamp": "2026-05-11T22:09:53.699797Z", "level": "INFO", "logger": "repo_module.api.app", "message": "REPO Module shutdown complete"}
+{"timestamp": "2026-05-11T22:09:55.221339Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Starting REPO Module in DEMO mode"}
+{"timestamp": "2026-05-11T22:09:55.273390Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Database initialized"}
+{"timestamp": "2026-05-11T22:10:37.028722Z", "level": "INFO", "logger": "repo_module.api.app", "message": "REPO Module shutdown complete"}
+{"timestamp": "2026-05-11T22:10:38.565560Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Starting REPO Module in DEMO mode"}
+{"timestamp": "2026-05-11T22:10:38.623201Z", "level": "INFO", "logger": "repo_module.api.app", "message": "Database initialized"}
